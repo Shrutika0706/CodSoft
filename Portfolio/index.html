@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrutika portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/3c421bf23a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h3><span>Shrutika's</span> portfolio.</h3>
+            <!-- <img src="images/logo3.jpg.png" class="logo"> -->
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_text">
+            <!-- <p>Developer</p> -->
+            <h3>Hello! It's Me</h3>
+            <h1>Shrutika Deshmukh</h1>
+            <h3>And I am  <span>Frontend Developer</span></h3>
+            <p>Passionate developer dedicated to creating efficient and innovative solutions through code.</p>
+        </div>
+    </div>
+ </div> 
+ <!-- --------ABOUT ---------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/myself2.jpg">
+             
+            </div>
+            <div class="about-col-2">
+                <h1 class="heading">About <span>ME</span></h1>
+                <h2>Frontend Developer</h2>
+                <p> I am passionate tech enthusiast and front-end developer dedicated to crafting immersive and user-friendly web experiences. With a keen eye for design and a knack for cutting-edge technologies, I strive to bring ideas to life through the art of coding.</p>
+                     
+                <a href="images/myCV.pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    skills -->
+<div id="skills">
+    <div class="container">
+        <h1 class ="sub-title">My Skills</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end</h2>
+            <p>Python-moderate</p>
+            <p>c++</p>
+            <p>Java</p>
+            <p>javascript</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div> 
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>Figma </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-ghost"></i>
+            <h2>Backend</h2>
+            <p>Mysql</p>
+            <p>Mongo</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>   
+        </div> 
+    </div>
+</div>
+
+<!-- ---portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/web dev.webp">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <!-- <p>This connect to the people around you.</p> -->
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/uiux2-removebg-preview.png">
+                <div class="layer">
+                    <h3>UI/UX Design</h3>
+                    <!-- <p>For easy calculation.</p> -->
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/appdev-removebg-preview.png">
+                <div class="layer">
+                    <h3>App Development</h3>
+                    <!-- <p>This app is for online shopping.</p> -->
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#"class="btn">See More</a> -->
+    </div>
+</div>
+ <!-- contact -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>shrutikadeshmukh0706@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9699243098</p>
+                <div class="social-icons">
+                  <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a> 
+                  <a href="http://linkdn.com/"><i class="fa-brands fa-linkedin"></i></a> 
+                  <a href=""><i class='bx bxl-twitter'></i></a>
+                  <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+                <!-- <a href="images/myCV.pdf.pdf" download class="btn btn2">Download CV</a> -->
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>@copyright Shrutika Deshmukh <i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+ 
+</body>
+</html>
